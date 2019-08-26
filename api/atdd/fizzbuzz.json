@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "7461b639-21f0-4192-9764-88e8fba8b64e",
+		"name": "FizzBuzz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Number is 1 should get \"1\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b078edf2-d030-49d1-b0cd-41ed02196e71",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Number should be 1\", function () {",
+							"    pm.expect(jsonData.number).to.eql(1);",
+							"});",
+							"",
+							"pm.test(\"Fizzbuzz number should get 1\", function () {",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"1\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"number\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_number_to_fizzbuzz/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_number_to_fizzbuzz",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number is 2 should get \"2\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b078edf2-d030-49d1-b0cd-41ed02196e71",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Number should be 2\", function () {",
+							"    pm.expect(jsonData.number).to.eql(2);",
+							"});",
+							"",
+							"pm.test(\"Fizzbuzz number should get 2\", function () {",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"2\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"number\":\"2\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_number_to_fizzbuzz/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_number_to_fizzbuzz",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number is 3 should get \"Fizz\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b078edf2-d030-49d1-b0cd-41ed02196e71",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Number should be 3\", function () {",
+							"    pm.expect(jsonData.number).to.eql(3);",
+							"});",
+							"",
+							"pm.test(\"Fizzbuzz number should get Fizz\", function () {",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"Fizz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"number\":\"3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_number_to_fizzbuzz/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_number_to_fizzbuzz",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number is 4 should get \"4\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b078edf2-d030-49d1-b0cd-41ed02196e71",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Number should be 4\", function () {",
+							"    pm.expect(jsonData.number).to.eql(4);",
+							"});",
+							"",
+							"pm.test(\"Fizzbuzz number should get 4\", function () {",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"4\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"number\":\"4\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_number_to_fizzbuzz/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_number_to_fizzbuzz",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number is 5 should get \"Buzz\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b078edf2-d030-49d1-b0cd-41ed02196e71",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Number should be 5\", function () {",
+							"    pm.expect(jsonData.number).to.eql(5);",
+							"});",
+							"",
+							"pm.test(\"Fizzbuzz number should get Buzz\", function () {",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"Buzz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"number\":\"5\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_number_to_fizzbuzz/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_number_to_fizzbuzz",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number is 6 should get \"Fizz\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b078edf2-d030-49d1-b0cd-41ed02196e71",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Number should be 6\", function () {",
+							"    pm.expect(jsonData.number).to.eql(6);",
+							"});",
+							"",
+							"pm.test(\"Fizzbuzz number should get Fizz\", function () {",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"Fizz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"number\":\"6\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_number_to_fizzbuzz/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_number_to_fizzbuzz",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number is 15 should get \"FizzBuzz\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b078edf2-d030-49d1-b0cd-41ed02196e71",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Number should be 15\", function () {",
+							"    pm.expect(jsonData.number).to.eql(15);",
+							"});",
+							"",
+							"pm.test(\"Fizzbuzz number should get FizzBuzz\", function () {",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"FizzBuzz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"number\":\"15\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_number_to_fizzbuzz/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_number_to_fizzbuzz",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
